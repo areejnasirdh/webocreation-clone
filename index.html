@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- Include Slick Slider CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <title>Webocreation</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <div class="header-container">
+      <div class="main-container">
+        <div class="header d-flex justify-content-between align-items-center">
+          <img src="./images/webocreation1.png" alt="webocreation1.png" />
+          <div class="d-flex justify-content-between border border-0">
+            <nav>
+              <a class="active" href="#"  onmouseover="hide()" onmousemove="hideAbout()">HOME</a>
+              <a href="#" onmouseover="showAbout()" id="about">
+                ABOUT
+                <div class="triangle2" id="mega-menu-about2"></div>
+              </a>
+              <a href="#" onmouseover="show()" id="service"
+                >SERVICES
+                <div class="triangle" id="mega-menu-service2"></div>
+              </a>
+              <a href="#ref-" onmouseover="hide()" onmousemove="hideAbout()">BLOG</a>
+              <a href="#" onmouseover="hide()" onmousemove="hideAbout()">CONTACT</a>
+            </nav>
+            <div>
+              <img
+                src="./images/Icon-feather-search.png"
+                alt="Icon feather-search.png"
+              />
+              <button>Let's Talk</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mega-menu-service" id="mega-menu-service" onmouseleave="hide()">
+        <div class="footer-content">
+          <table>
+            <tr>
+              <th>Services</th>
+            </tr>
+            <tr>
+              <td>
+                <ul>
+                  <li>Brand Identity Design</li>
+                  <li>Domain and Hosting - Cloud & Cpanel</li>
+                  <li>Design and Development</li>
+                  <li>5 in 1 eCommerce Platform</li>
+                  <li>Marketing Automation</li>
+                  <li>Social Media Promotion</li>
+                  <li>API Integration</li>
+                  <li>Easy SEO workflow</li>
+                  <li>Ads Services</li>
+                  <li>Website Security and Speed</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="mega-menu-service" id="mega-menu-about" onmouseleave="hideAbout()">
+        <div class="footer-content">
+          <table>
+            <tr>
+              <th>About</th>
+            </tr>
+            <tr>
+              <td>
+                <ul>
+                  <li>About Us</li>
+                  <li>Careers</li>
+                  <li>Consulting</li>
+                  <li>Privacy Policy</li>
+                  <li>Terms of Services</li>
+                  <li>Sitemaps </li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Home -->
+    <div id="home" class="home-container">
+      <div class="main-container">
+        <div class="home">
+          <div>
+            <h4>Ecommerce Development Company in Glendale, Arizona</h4>
+            <h1>5 in 1 eCommerce platform and services</h1>
+            <p>
+              No monthly fees, no catches, website will be ready within 1 hour
+              and you can start accepting order just by adding products. Based
+              on Open source Opencart and hosted in Google Cloud
+            </p>
+            <div>
+              <button>See Features</button>
+              <button>View Demo</button>
+            </div>
+          </div>
+          <img src="./images/homeBanner.png" alt="homeBanner" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Strategic Alliance -->
+    <div class="strategic-alliance">
+      <h2>Strategic Alliance</h2>
+      <div class="strategic-alliance-slider">
+        <div><img src="./images/company1.png" alt="company1.png" /></div>
+        <div><img src="./images/company2.png" alt="company1.png" /></div>
+        <div><img src="./images/company3.png" alt="company1.png" /></div>
+        <div><img src="./images/company4.png" alt="company1.png" /></div>
+        <div><img src="./images/company5.png" alt="company1.png" /></div>
+        <div><img src="./images/company6.png" alt="company1.png" /></div>
+        <div><img src="./images/company7.png" alt="company1.png" /></div>
+        <div><img src="./images/company1.png" alt="company1.png" /></div>
+        <div><img src="./images/company2.png" alt="company1.png" /></div>
+        <div><img src="./images/company3.png" alt="company1.png" /></div>
+        <div><img src="./images/company4.png" alt="company1.png" /></div>
+        <div><img src="./images/company5.png" alt="company1.png" /></div>
+        <div><img src="./images/company6.png" alt="company1.png" /></div>
+        <div><img src="./images/company7.png" alt="company1.png" /></div>
+      </div>
+    </div>
+
+    <!-- Features -->
+    <div id="about" class="main-container">
+      <div class="features">
+        <h2>Features</h2>
+        <p>We Provide a complete package of web development services.</p>
+        <div class="features-card-container">
+          <div class="features-card">
+            <img src="./images/feature1.png" alt="feature1.png" />
+            <h3>5 in 1 eCommerce Platform</h3>
+            <p>
+              Providing everything you need for your eCommerce Journey - web
+              store, social commerce,marketplace sync, live commerce, and
+              reporting. Multichannel eCommerce where you can sell and sync with
+              multiple marketplace. B2B and B2C marketplace inplaced.
+            </p>
+            <div>
+              <h4>eCommerce stack features</h4>
+              <img src="./images/arrowRight.png" alt="arrowRight.png" />
+            </div>
+          </div>
+          <div class="features-card">
+            <img src="./images/feature2.png" alt="feature1.png" />
+            <h3>Opencart Development Services</h3>
+            <p>
+              Glendale, Arizona USA based company which offer all kinds of
+              OpenCart development services including customization, payment and
+              shipping integrations, marketplaces development, and dropship
+              solutions.
+            </p>
+            <div>
+              <h4>free extension of Opencart</h4>
+              <img src="./images/arrowRight.png" alt="arrowRight.png" />
+            </div>
+          </div>
+          <div class="features-card">
+            <img src="./images/feature3.png" alt="feature1.png" />
+            <h3>Take Back Control of Your Time</h3>
+            <p>
+              We have written two books and multiple blog posts and videos
+              collection of OpenCart module and theme development which help
+              developers and programmers get knowledge from beginner to
+              advanced.
+            </p>
+            <div>
+              <h4>Learn Opencart development</h4>
+              <img src="./images/arrowRight.png" alt="arrowRight.png" />
+            </div>
+          </div>
+          <div class="features-card">
+            <img src="./images/feature1.png" alt="feature1.png" />
+            <h3>5 in 1 eCommerce Platform</h3>
+            <p>
+              Providing everything you need for your eCommerce Journey - web
+              store, social commerce,marketplace sync, live commerce, and
+              reporting. Multichannel eCommerce where you can sell and sync with
+              multiple marketplace. B2B and B2C marketplace inplaced.
+            </p>
+            <div>
+              <h4>eCommerce stack features</h4>
+              <img src="./images/arrowRight.png" alt="arrowRight.png" />
+            </div>
+          </div>
+          <div class="features-card">
+            <img src="./images/feature2.png" alt="feature1.png" />
+            <h3>Opencart Development Services</h3>
+            <p>
+              Glendale, Arizona USA based company which offer all kinds of
+              OpenCart development services including customization, payment and
+              shipping integrations, marketplaces development, and dropship
+              solutions.
+            </p>
+            <div>
+              <h4>free extension of Opencart</h4>
+              <img src="./images/arrowRight.png" alt="arrowRight.png" />
+            </div>
+          </div>
+          <div class="features-card">
+            <img src="./images/feature3.png" alt="feature1.png" />
+            <h3>Take Back Control of Your Time</h3>
+            <p>
+              We have written two books and multiple blog posts and videos
+              collection of OpenCart module and theme development which help
+              developers and programmers get knowledge from beginner to
+              advanced.
+            </p>
+            <div>
+              <h4>Learn Opencart development</h4>
+              <img src="./images/arrowRight.png" alt="arrowRight.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="ref-download" class="main-container">
+      <div class="read-more">
+        <div>
+          <img src="./images/readmore.png" alt="readmore.png" />
+          <p>Lorem ipsum dolor</p>
+          <button>READ MORE</button>
+        </div>
+        <div>
+          <img src="./images/readmore2.png" alt="readmore2.png" />
+          <p>Lorem ipsum dolor</p>
+          <button>READ MORE</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Progress Track -->
+    <div class="main-container">
+      <div class="progress-track">
+        <h2>Track the progress towards objectives with key results</h2>
+        <p>Lorem ipsum is dummy content for website design and development</p>
+        <div>
+          <div>
+            <h3>9 of top 10</h3>
+            <p>Lorem ipsum dolor sit amet consectetur</p>
+          </div>
+          <div>
+            <h3>3 of 4</h3>
+            <p>Lorem ipsum dolor sit amet consectetur</p>
+          </div>
+          <div>
+            <h3>17 of 20</h3>
+            <p>Lorem ipsum dolor sit amet consectetur</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Trusted -->
+    <div id="resource" class="main-container">
+      <div class="trusted">
+        <h2>Trusted by the world's best Companies</h2>
+        <p>
+          Discover how Webocreation customers are using our technology stack to
+          growth, security, and innovation
+        </p>
+        <div>
+          <div><img src="./images/trusted1.png" alt="trusted1.png" /></div>
+          <div><img src="./images/trusted2.png" alt="trusted2.png" /></div>
+          <div><img src="./images/trusted3.png" alt="trusted3.png" /></div>
+          <div><img src="./images/trusted4.png" alt="trusted4.png" /></div>
+          <div><img src="./images/trusted5.png" alt="trusted5.png" /></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonial -->
+    <div class="main-container position-relative">
+      <div class="testimonial-slider">
+        <div class="testimonial">
+          <span>
+            <h3>Lorem ipsum dolor</h3>
+            <h4>Lorem ipsum dolor</h4>
+          </span>
+          <img src="./images/testimonialIcon.png" alt="testimonialIcon.png" />
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged.
+          </p>
+          <div>
+            <img src="./images/tesimonail.PNG" alt="tesimonail.PNG" />
+            <h4>Jim</h4>
+            <p>Los Angeles,CA</p>
+            <div>
+              <img src="./images/star.png" alt="star.png" />
+              <img src="./images/star.png" alt="star.png" />
+              <img src="./images/star.png" alt="star.png" />
+              <img src="./images/star.png" alt="star.png" />
+              <img src="./images/star.png" alt="star.png" />
+            </div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <span>
+            <h3>Lorem ipsum dolor</h3>
+            <h4>Lorem ipsum dolor</h4>
+          </span>
+          <img src="./images/testimonialIcon.png" alt="testimonialIcon.png" />
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged.
+          </p>
+          <div>
+            <img src="./images/tesimonail.PNG" alt="tesimonail.PNG" />
+            <h4>Jim</h4>
+            <p>Los Angeles,CA</p>
+            <div>
+              <img src="./images/star.png" alt="star.png" />
+              <img src="./images/star.png" alt="star.png" />
+              <img src="./images/star.png" alt="star.png" />
+              <img src="./images/star.png" alt="star.png" />
+              <img src="./images/star.png" alt="star.png" />
+            </div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <span>
+            <h3>Lorem ipsum dolor</h3>
+            <h4>Lorem ipsum dolor</h4>
+          </span>
+          <img src="./images/testimonialIcon.png" alt="testimonialIcon.png" />
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged.
+          </p>
+          <div>
+            <img src="./images/tesimonail.PNG" alt="tesimonail.PNG" />
+            <h4>Jim</h4>
+            <p>Los Angeles,CA</p>
+            <div>
+              <img src="./images/star.png" alt="star.png" />
+              <img src="./images/star.png" alt="star.png" />
+              <img src="./images/star.png" alt="star.png" />
+              <img src="./images/star.png" alt="star.png" />
+              <img src="./images/star.png" alt="star.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Blog -->
+
+    <div class="main-container">
+      <div class="blog">
+        <h2>From the Blog</h2>
+        <p>
+          We write what we experienced. Our posts contain eCommerce tutorials,
+          tips and tricks, guides, videos, and documentation and latest Web 3.0,
+          blockchain, NFT and metaverse
+        </p>
+        <div>
+          <div>
+            <img src="./images/blog1.png" alt="blog1.png" />
+            <div>
+              <h4>Hosting</h4>
+              <div>
+                <img src="./images/time.png" alt="time.png" />
+                <p>April 17, 2022</p>
+              </div>
+              <h5>Host Lamp stack in AWS Lightsail. Opencart hosting in AWS</h5>
+            </div>
+          </div>
+          <div>
+            <img src="./images/blog2.png" alt="blog1.png" />
+            <div>
+              <h4>Opencart 4</h4>
+              <div>
+                <img src="./images/time.png" alt="time.png" />
+                <p>April 17, 2022</p>
+              </div>
+              <h5>Pull products JSON through API in Opencart</h5>
+            </div>
+          </div>
+          <div>
+            <img src="./images/blog3.png" alt="blog1.png" />
+            <div>
+              <h4>Theme Development</h4>
+              <div>
+                <img src="./images/time.png" alt="time.png" />
+                <p>April 17, 2022</p>
+              </div>
+              <h5>Develop Opencart 4 custom theme tutorial</h5>
+            </div>
+          </div>
+        </div>
+        <button>View More Blog Posts</button>
+      </div>
+    </div>
+
+    <!-- Get Started -->
+    <div class="get-started-container">
+      <div class="main-container">
+        <div class="get-started">
+          <div class="get-started-image">
+            <img src="./images/blog2.png" alt="blog2.png" />
+          </div>
+          <div class="get-started-content">
+            <h1>Let's Make <span>Something Amazing</span> Together</h1>
+            <p>
+              We always provide our best creative ideas at the highest level.
+              Tell us about your project and we will make it work.
+            </p>
+            <button>GET STARTED</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer-section">
+      <div id="contact" class="main-container">
+        <div class="footer">
+          <div class="footer-heading">
+            <img src="./images/webocreation1.png" alt="webocreation1.png" />
+            <p>
+              Glendale, Arizona USA based company which offer all kinds of
+              OpenCart development services including customization, payment and
+              shipping integrations, marketplaces development, and dropship
+              solutions.
+            </p>
+          </div>
+          <div class="footer-content">
+            <table>
+              <tr>
+                <th>Quick Links</th>
+                <th>Tech</th>
+                <th>About Us</th>
+                <th>Contact</th>
+                <th>NewsLetter</th>
+              </tr>
+              <tr>
+                <td>
+                  <ul>
+                    <li>5 in 1 eCommerce Platform</li>
+                    <li>Opencart Developments</li>
+                    <li>Free Opencart themes & extensions</li>
+                    <li>API Integration</li>
+                    <li>Marketing Automation</li>
+                    <li>Easy SEO workflow</li>
+                    <li>Website Security and Speed</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li>Opencart</li>
+                    <li>Wordpress</li>
+                    <li>Drupal</li>
+                    <li>Marketo</li>
+                    <li>Pardot</li>
+                    <li>Hubspot</li>
+                    <li>Salesforce</li>
+                    <li>Laravel</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li>About Us</li>
+                    <li>Careers</li>
+                    <li>Consulting</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms of Service</li>
+                    <li>Blog</li>
+                    <li>Contact</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li>
+                      <img src="./images/phone.png" alt="phone.png" />
+                      <p>(641) 455-1295</p>
+                    </li>
+                    <li>
+                      <img src="./images/message.png" alt="message.png" />
+                      <p>webocreation.com@gmail.com</p>
+                    </li>
+                    <li>
+                      <img src="./images/location.png" alt="location.png" />
+                      <p>6015 W Camino San Xavier, Glendale Arizona, 85308</p>
+                    </li>
+                  </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li>
+                      Join our 1000+ subscribers to get weekly newsletter of our
+                      blog posts about Technology
+                    </li>
+                    <li>
+                      <div>
+                        <input type="text" placeholder="Email address" />
+                        <button>Submit</button>
+                      </div>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Line -->
+    <div class="endline-container">
+      <div class="main-container">
+        <div class="endline">
+          <p>
+            Copyright © 2024 Webocreation. All Rights Reserved by Webocreation
+          </p>
+          <div class="d-flex justify-content-around">
+            <a href="#">
+              <img src="./images/Facebook.png" alt="Facebook.png" />
+            </a>
+            <a href="#">
+              <img src="./images/X-(Twitter).png" alt="X-(Twitter).png" />
+            </a>
+            <a href="#">
+              <img src="./images/linkedIn.png" alt="linkedIn.png" />
+            </a>
+            <a href="#">
+              <img src="./images/Youtube.png" alt="Youtube.png" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Include jQuery from a CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- Include Slick Slider JS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".strategic-alliance-slider").slick({
+          // Slick Slider settings/options go here
+          slidesToShow: 6,
+          infinite: true,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          centerMode: true,
+          centerPadding: "20px",
+          arrows: false,
+          responsive: [
+            {
+              breakpoint: 1600,
+              settings: {
+                slidesToShow: 5,
+              },
+            },
+            {
+              breakpoint: 1250,
+              settings: {
+                slidesToShow: 4,
+              },
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 3,
+              },
+            },
+          ],
+        });
+      });
+      $(document).ready(function () {
+        $(".testimonial-slider").slick({
+          // Slick Slider settings/options go here
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: false,
+          autoplaySpeed: 5000,
+          arrows: true,
+          dots: false,
+          slideNumbers: false,
+        });
+      });
+      $(document).ready(function () {
+        $(".features-slider").slick({
+          // Slick Slider settings/options go here
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 5000,
+          arrows: false,
+          responsive: [
+            {
+              breakpoint: 1250,
+              settings: {
+                slidesToShow: 2,
+              },
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 1,
+              },
+            },
+          ],
+        });
+      });
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      var Id = document.getElementById("mega-menu-service");
+      var Id2 = document.getElementById("mega-menu-service2");
+      var service = document.getElementById("service");
+      function show() {
+        Id.style.display = "block";
+        Id2.style.display = "block";
+        service.style.color = "#f56032"
+        hideAbout()
+      }
+      function hide(){
+        Id.style.display = "none";
+        Id2.style.display = "none";
+        service.style.color = "black"
+      }
+      // about
+
+      var Idabout = document.getElementById("mega-menu-about");
+      var Idabout2 = document.getElementById("mega-menu-about2");
+      var about = document.getElementById("about");
+      function showAbout() {
+        Idabout.style.display = "block";
+        Idabout2.style.display = "block";
+        about.style.color = "#f56032"
+        hide()
+      }
+      function hideAbout(){
+        Idabout.style.display = "none";
+        Idabout2.style.display = "none";
+        about.style.color = "black"
+      }
+    </script>
+  </body>
+</html>

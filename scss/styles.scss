@@ -1,0 +1,1335 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&family=Vidaloka&display=swap");
+
+$primary: #f56032;
+$secondary: #3c4456;
+$megaMenu: rgb(218, 212, 212);
+
+$btn-shadow: "rgba(245, 96, 50, 0.5411764706) 0px 8px 24px";
+$box-border: "1px solid gainsboro";
+
+$Poppins: "Poppins";
+$Vidaloka: "Vidaloka";
+
+$h1: 50px;
+$h2: 40px;
+$p: 22px;
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $Poppins, sans-serif;
+    scroll-behavior: smooth;
+
+    body {
+        background-image: url("../images/background.png");
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+
+        button {
+            transition: all 0.5s ease;
+
+            &:hover {
+                opacity: 0.8;
+                cursor: pointer;
+            }
+
+            &:active {
+                transform: scale(0.95);
+            }
+        }
+
+        .header-container {
+            background-color: white;
+            background-image: url("./images/Group\ 5472.png");
+            background-repeat: no-repeat;
+            position: relative;
+            
+            .mega-menu-service{
+                display: none;
+                width: 100%;
+                position: absolute;
+                left: 0;
+                top: 90px;
+                background-color: $megaMenu;
+                padding: 50px;
+
+                .footer-content {
+                    display: flex;
+                    margin-top: 10px;
+                    justify-content: space-between;
+
+                    table {
+                        width: 100%;
+
+                        tr {
+                            th {
+                                padding: 15px 0;
+                                text-transform: uppercase;
+                                transition: all 0.5s ease;
+                                font-size: 22px;
+                                font-family: $Vidaloka, serif;
+                                letter-spacing: 2px;
+                                font-weight: 500;
+                                color: $primary;
+
+                            }
+
+                            td {
+                                min-width: 150px;
+                                max-width: 260px;
+                                margin-right: 20px;
+                                vertical-align: top;
+
+                                &:nth-child(4) {
+                                    li {
+                                        margin: 10px 0px;
+                                        align-items: flex-start;
+
+                                        img {
+                                            width: 20px;
+                                            height: 20px;
+                                            object-fit: contain;
+                                        }
+                                    }
+                                }
+
+                                ul {
+                                    margin-top: 20px;
+                                    list-style-type: none;
+                                    padding: 0;
+
+                                    li {
+                                        line-height: 2;
+                                        color: $secondary;
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 10px;
+                                        transition: all 0.5s ease;
+
+                                        &:hover {
+                                            cursor: pointer;
+                                            color: $primary;
+                                        }
+
+                                        img {
+                                            height: 20px;
+                                            width: 20px;
+                                            object-fit: contain;
+                                        }
+
+                                        p {
+                                            margin: 0;
+                                            padding: 0;
+                                        }
+
+                                        div {
+                                            border: 1px solid gainsboro;
+                                            width: 100%;
+                                            margin-top: 10px;
+                                            margin-left: 0;
+                                            display: flex;
+                                            justify-content: space-between;
+                                            border-radius: 10px;
+                                            overflow: hidden;
+
+                                            input {
+                                                padding: 10px 10px;
+                                                border: none;
+                                                width: 80%;
+                                                background-color: transparent;
+                                                outline: none;
+                                            }
+
+                                            button {
+                                                width: 130px;
+                                                border: none;
+                                                background-color: $primary;
+                                                color: white;
+                                                font-size: 15px;
+                                                font-family: $Vidaloka, serif;
+                                                font-weight: 400;
+                                                text-transform: uppercase;
+                                            }
+
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .main-container {
+            width: 1200px;
+            margin: auto;
+
+            .header {
+                img {
+                    width: 200px;
+                }
+
+                nav {
+                    display: flex;
+                    font-size: 15px;
+                    text-transform: uppercase;
+                    font-weight: 400;
+
+                    .active::before {
+                        content: "";
+                        position: absolute;
+                        left: 0px;
+                        width: 10px;
+                        height: 10px;
+                        background-color: $primary ;
+                        top: 35px;
+                        border-radius: 50%;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: black;
+                        transition: all 0.5s ease;
+                        position: relative;
+                        padding-top: 30px;
+                        padding-bottom: 30px;
+                        padding-left: 20px;
+                        overflow: hidden;
+                        position: relative;
+
+                        .triangle{
+                            width: 100%;
+                            background-color:$megaMenu;
+                            transform: rotate(43deg);
+                            position: absolute;
+                            bottom: -29px;
+                            left: 35px;
+                            display: none;
+                        }
+
+                        .triangle2{
+                            width: 100%;
+                            background-color: $megaMenu;
+                            transform: rotate(43deg);
+                            position: absolute;
+                            bottom: -23px;
+                            left: 26px;
+                            display: none;
+                        }
+
+                        &:hover {
+                            color: $primary;
+                        }
+                    }
+                }
+
+                div {
+                    display: flex;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    padding-left: 35px;
+                    padding-right: 10px;
+                    gap: 40px;
+                    border-left: 1px solid gainsboro;
+                    align-items: center;
+
+                    button {
+                        background-color: $primary;
+                        border: none;
+                        padding: 15px 25px;
+                        font-size: 15px;
+                        text-transform: uppercase;
+                        color: white;
+                        font-family: $Vidaloka, serif;
+                        letter-spacing: 2px;
+                        border-radius: 10px;
+                        box-shadow: $primary 0px 8px 24px;
+                    }
+
+                    img {
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+            }
+
+            .home {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                height: 680px;
+
+                div {
+                    width: 50%;
+
+                    h4 {
+                        color: $primary;
+                        letter-spacing: 2px;
+                        font-size: 16px;
+                        font-weight: bold;
+                    }
+
+                    h1 {
+                        font-size: $h1;
+                        font-family: $Vidaloka, serif;
+                        color: $secondary;
+                        font-weight: 500;
+                        letter-spacing: 2px;
+                    }
+
+                    p {
+                        font-size: 22px;
+                        letter-spacing: 1.5px;
+                        margin: 40px 0;
+                    }
+
+                    div {
+                        display: flex;
+                        width: fit-content;
+
+                        button {
+                            padding: 15px 25px;
+                            font-size: 15px;
+                            border: 1px solid $primary;
+                            text-transform: uppercase;
+                            font-family: $Vidaloka, serif;
+                            letter-spacing: 1.5px;
+
+                            &:first-child {
+                                background-color: $primary;
+                                border-radius: 30px 0 0 30px;
+                                color: white;
+
+                                &:hover {
+                                    color: $primary;
+                                    background-color: white;
+                                }
+                            }
+
+                            &:last-child {
+                                background-color: white;
+                                color: $primary;
+                                border-radius: 0 30px 30px 0;
+
+                                &:hover {
+                                    background-color: $primary;
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                img {
+                    width: 50%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+
+            .features {
+                margin-top: 80px;
+
+                h2 {
+                    font-size: $h2;
+                    font-family: $Vidaloka, serif;
+                    text-align: center;
+                    font-weight: 500;
+                    letter-spacing: 2px;
+                    color: $secondary;
+                }
+
+                p {
+                    text-align: center;
+                    font-size: $p;
+                }
+
+                .features-card-container {
+                    width: 100%;
+                    margin-bottom: 100px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+
+                    .features-card {
+                        margin: 20px;
+                        background-color: transparent;
+                        display: flex;
+                        flex-direction: column;
+                        border-radius: 15px;
+                        box-shadow: #0000001c 0px 8px 24px;
+                        overflow: hidden;
+                        padding: 30px;
+                        width: 30%;
+                        transition: all 0.5s ease;
+
+                        &:hover {
+                            transform: scale(0.95);
+                        }
+
+                        img {
+                            width: 100%;
+                        }
+
+                        h3 {
+                            font-size: 20px;
+                            font-family: fantasy;
+                            color: $secondary;
+                            margin-top: 10px;
+                            text-align: left;
+                        }
+
+                        p {
+                            height: 180px;
+                            text-align: left;
+                            font-size: 15px;
+                            padding-bottom: 40px;
+                            border-bottom: 1px solid gainsboro;
+                        }
+
+                        div {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 20px;
+                            padding-bottom: 20px;
+                            color: $primary;
+
+                            h4 {
+                                text-transform: uppercase;
+                                font-family: $Vidaloka, serif;
+                                font-size: 16px;
+                                font-weight: 500;
+                            }
+
+                            img {
+                                width: 20px;
+                                object-fit: contain;
+                                margin-bottom: 6px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .read-more {
+                display: flex;
+                margin-top: 40px;
+                justify-content: center;
+                gap: 40px;
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    background-color: white;
+                    border: 1px solid gainsboro;
+                    padding: 20px 30px;
+                    border-radius: 10px;
+                    transition: all 0.5s ease;
+
+                    &:hover {
+                        transform: scale(0.95);
+                        cursor: pointer;
+                    }
+
+                    img {
+                        width: 100%;
+                        border-radius: 10px;
+                    }
+
+                    p {
+                        text-align: center;
+                        color: black;
+                        margin-top: 20px;
+                        font-size: $p;
+                    }
+
+                    button {
+                        width: fit-content;
+                        margin: auto;
+                        padding: 15px 25px;
+                        font-size: 15px;
+                        font-family: $Vidaloka, serif;
+                        color: white;
+                        background-color: $primary;
+                        border: none;
+                        border-radius: 10px;
+                        letter-spacing: 2px;
+                        box-shadow: $primary 0px 8px 24px;
+                    }
+                }
+            }
+
+            .progress-track {
+                margin-top: 100px;
+
+                h2,
+                .trusted>h2,
+                .blog>h2 {
+                    font-size: $h2;
+                    font-family: $Vidaloka, serif;
+                    text-align: center;
+                    font-weight: 500;
+                    letter-spacing: 2px;
+                    color: $secondary;
+                }
+
+                p,
+                .trusted>p,
+                .blog>p {
+                    text-align: center;
+                    font-size: $p;
+                }
+
+                div {
+                    gap: 20px;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 30px;
+
+                    div {
+                        background-color: white;
+                        border: 1px solid gainsboro;
+                        padding: 30px 60px;
+                        border-radius: 10px;
+                        transition: all 0.5s ease;
+                        display: block;
+
+                        &:hover {
+                            transform: scale(0.95);
+                            cursor: pointer;
+                        }
+
+                        h3 {
+                            color: $primary;
+                            font-family: $Vidaloka, serif;
+                            font-size: 40px;
+                            font-weight: 500;
+                            text-align: center;
+                        }
+
+                        p {
+                            width: 70%;
+                            text-align: center;
+                            margin: auto;
+                            margin-top: 10px;
+                            font-size: 22px;
+                        }
+                    }
+                }
+            }
+
+            .trusted {
+                margin-top: 100px;
+
+                h2 {
+                    font-size: $h2;
+                    font-family: $Vidaloka, serif;
+                    text-align: center;
+                    font-weight: 500;
+                    letter-spacing: 2px;
+                    color: $secondary;
+                }
+
+                p {
+                    text-align: center;
+                    font-size: $p;
+                }
+
+                div {
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    margin-top: 40px;
+
+                    div {
+                        background-color: white;
+                        border: 1px solid gainsboro;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 18%;
+                        height: 150px;
+                        border-radius: 10px;
+                        box-shadow: #55555550 0px 8px 24px;
+                        transition: all 0.5s ease;
+
+                        &:hover {
+                            transform: scale(0.95);
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+
+            .testimonial-slider {
+                position: relative;
+
+                button {
+                    position: absolute;
+                    top: 50%;
+                    z-index: 10;
+                    font-size: 0;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    border: none;
+                    background-color: $primary;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    &.slick-next {
+                        right: 0px !important; // Position the right arrow at the right end
+
+                        &::before {
+                            content: ">";
+                            color: white;
+                            font-size: 22px;
+                            position: absolute;
+                            font-weight: bold;
+                        }
+                    }
+
+                    &.slick-prev {
+                        left: 0px !important;
+
+                        &::before {
+                            content: "<";
+                            color: white;
+                            font-size: 22px;
+                            position: absolute;
+                            font-weight: bold;
+                        }
+                    }
+
+                }
+
+                .testimonial {
+                    background-color: white;
+                    box-shadow: #55555550 0px 8px 24px;
+                    border-radius: 10px;
+                    margin: 0 20px;
+                    margin-top: 100px;
+                    margin-bottom: 40px;
+                    display: flex !important;
+                    flex-direction: column !important;
+                    gap: 20px;
+                    padding: 80px 150px;
+
+                    span {
+                        width: 300px;
+                        margin: auto;
+
+                        h3 {
+                            font-size: 30px;
+                            font-family: $Vidaloka, serif;
+                            font-weight: 500;
+                            letter-spacing: 2px;
+                            color: $secondary;
+                            text-align: center;
+                        }
+
+                        h4 {
+                            font-size: 20px;
+                            font-family: $Vidaloka, serif;
+                            font-weight: 500;
+                            text-align: center;
+                            letter-spacing: 2px;
+                            color: $secondary;
+                        }
+
+                    }
+
+
+                    img {
+                        width: 50px;
+                        margin: auto;
+                    }
+
+                    p {
+                        font-size: 20px;
+                        font-weight: 500;
+                        text-align: center;
+                    }
+
+                    div {
+                        margin: auto;
+                        margin-top: 20px;
+
+                        img {
+                            width: 80px;
+                            margin: auto;
+                            border-radius: 50%;
+                        }
+
+                        * {
+                            text-align: center;
+                            margin-top: 5px;
+                        }
+
+                        div {
+                            display: flex;
+                            justify-content: center;
+                            gap: 5px;
+                            margin-top: 10px;
+
+                            img {
+                                width: 30px;
+                                object-fit: contain;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .blog {
+                margin-top: 100px;
+                display: flex;
+                flex-direction: column;
+
+                h2 {
+                    font-size: $h2;
+                    font-family: $Vidaloka, serif;
+                    text-align: center;
+                    font-weight: 500;
+                    letter-spacing: 2px;
+                    color: $secondary;
+                }
+
+                p {
+                    text-align: center;
+                    font-size: $p;
+                }
+
+
+                div {
+                    margin-top: 50px;
+                    display: flex;
+                    gap: 25px;
+                    justify-content: center;
+
+                    div {
+                        display: block;
+                        gap: unset;
+                        width: 30%;
+                        box-shadow: #55555550 0px 8px 24px;
+                        border-radius: 10px;
+                        padding-bottom: 20px;
+                        transition: all 0.5s ease;
+                        background-color: white;
+
+                        &:hover {
+                            cursor: pointer;
+                            transform: scale(0.95);
+                        }
+
+                        img {
+                            width: 100%;
+                            height: 250px;
+                            object-fit: contain;
+                        }
+
+                        div {
+                            margin: 10px 0px;
+                            width: 100%;
+                            box-shadow: none;
+                            padding: 0px 20px;
+
+                            h4 {
+                                font-size: 15px;
+                                font-style: italic;
+                                color: white;
+                                margin: 20px 0px;
+                                background-color: $primary;
+                                width: fit-content;
+                                padding: 5px 10px;
+                                border-radius: 30px;
+                            }
+
+                            div {
+                                display: flex;
+                                margin: 10px 0px;
+                                width: 100%;
+                                box-shadow: none;
+                                justify-content: flex-start;
+                                align-items: center;
+                                padding: 0;
+                                height: 20px;
+
+                                img {
+                                    width: 20px;
+                                    object-fit: contain;
+                                }
+
+                                p {
+                                    font-size: 15px;
+                                    padding: 0;
+                                    margin: 0 10px;
+                                }
+
+                            }
+                        }
+
+
+
+
+                        h5 {
+                            color: $secondary;
+                            font-size: 22px;
+                            font-weight: 500;
+                            font-family: $Vidaloka, serif;
+                            margin-top: 20px;
+                        }
+                    }
+                }
+
+                button {
+                    background-color: $primary;
+                    border: none;
+                    padding: 15px 25px;
+                    font-size: 15px;
+                    text-transform: uppercase;
+                    color: white;
+                    font-family: $Vidaloka, serif;
+                    letter-spacing: 2px;
+                    border-radius: 10px;
+                    box-shadow: $primary 0px 8px 24px;
+                    margin: 60px auto;
+                }
+            }
+
+            .get-started {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 350px;
+
+                .get-started-image {
+                    width: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-self: center;
+                    transition: all 0.5s ease;
+
+                    img {
+                        width: 100%;
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+                        transform: scale(0.95);
+                    }
+                }
+
+                .get-started-content {
+                    width: 50%;
+                    padding: 20px;
+
+                    h1 {
+                        font-size: $h1;
+                        font-family: $Vidaloka, serif;
+                        color: white;
+                        font-weight: 500;
+
+                        span {
+                            color: $primary;
+                            font-family: $Vidaloka, serif;
+                        }
+                    }
+
+                    p {
+                        color: white;
+                        font-size: 19px;
+                        margin-top: 20px;
+                    }
+
+                    button {
+                        padding: 15px 25px;
+                        font-size: 15px;
+                        margin-top: 8px;
+                        color: $primary;
+                        font-family: $Vidaloka, serif;
+                        border-radius: 10px;
+                        border: none;
+                        background-color: white;
+                    }
+                }
+            }
+
+            .footer {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                .footer-heading {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    p {
+                        font-size: 18px;
+                        text-align: center;
+                        width: 100%;
+                        margin-top: 10px;
+                        margin-bottom: 20px;
+                    }
+                }
+
+                .footer-content {
+                    display: flex;
+                    margin-top: 10px;
+                    justify-content: space-between;
+
+                    table {
+                        width: 100%;
+
+                        tr {
+                            border-bottom: 2px solid gainsboro;
+                            border-top: 2px solid gainsboro;
+
+                            &:last-child {
+                                border: none;
+                            }
+
+                            th {
+                                padding: 15px 0;
+                                text-transform: uppercase;
+                                transition: all 0.5s ease;
+                                font-size: 22px;
+                                font-family: $Vidaloka, serif;
+                                letter-spacing: 2px;
+                                font-weight: 500;
+                                color: $secondary;
+                            }
+
+                            td {
+                                min-width: 150px;
+                                max-width: 260px;
+                                margin-right: 20px;
+                                vertical-align: top;
+
+                                &:nth-child(4) {
+                                    li {
+                                        margin: 10px 0px;
+                                        align-items: flex-start;
+
+                                        img {
+                                            width: 20px;
+                                            height: 20px;
+                                            object-fit: contain;
+                                        }
+                                    }
+                                }
+
+                                ul {
+                                    margin-top: 40px;
+                                    list-style-type: none;
+                                    padding: 0;
+
+                                    li {
+                                        line-height: 2;
+                                        color: $secondary;
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 10px;
+                                        transition: all 0.5s ease;
+
+                                        &:hover {
+                                            cursor: pointer;
+                                            color: $primary;
+                                        }
+
+                                        img {
+                                            height: 20px;
+                                            width: 20px;
+                                            object-fit: contain;
+                                        }
+
+                                        p {
+                                            margin: 0;
+                                            padding: 0;
+                                        }
+
+                                        div {
+                                            border: 1px solid gainsboro;
+                                            width: 100%;
+                                            margin-top: 10px;
+                                            margin-left: 0;
+                                            display: flex;
+                                            justify-content: space-between;
+                                            border-radius: 10px;
+                                            overflow: hidden;
+
+                                            input {
+                                                padding: 10px 10px;
+                                                border: none;
+                                                width: 80%;
+                                                background-color: transparent;
+                                                outline: none;
+                                            }
+
+                                            button {
+                                                width: 130px;
+                                                border: none;
+                                                background-color: $primary;
+                                                color: white;
+                                                font-size: 15px;
+                                                font-family: $Vidaloka, serif;
+                                                font-weight: 400;
+                                                text-transform: uppercase;
+                                            }
+
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
+            .endline {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 60px;
+
+                p {
+                    margin: 0;
+                    padding: 0;
+                }
+
+                div {
+                    width: 180px;
+
+                    img {
+                        height: 30px;
+                        width: 30px;
+                        object-fit: contain;
+                    }
+                }
+
+            }
+
+        }
+
+        .endline-container {
+            background-color: #f1f1f1;
+            margin-top: 100px;
+        }
+
+        .get-started-container {
+            background-image: url("../images/getstartedBg2.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            margin-top: 100px;
+            height: 350px;
+        }
+
+        .strategic-alliance {
+            background-color: white;
+            text-align: center;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 40px;
+
+            .strategic-alliance-slider {
+                width: 100%;
+
+                .slick-list {
+                    width: 100%;
+
+                    .slick-track {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        div {
+                            width: 200px;
+                            margin: 0px 20px;
+                            height: 50px;
+
+                            img {
+                                filter: grayscale(1);
+                                width: 100%;
+                                height: 100%;
+                                object-fit: contain;
+                            }
+                        }
+                    }
+                }
+            }
+
+            h2 {
+                font-size: $h2;
+                font-family: $Vidaloka, serif;
+                font-weight: 500;
+                color: $secondary;
+            }
+        }
+
+        .footer-section {
+            background-image: url("../images/footerBg.png");
+            background-position: center;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-top: 100px;
+        }
+
+
+    }
+}
+
+@media (max-width: 1600px) {
+    .main-container {
+        width: 1400px;
+
+        .header {
+            nav {
+                gap: 20px;
+                font-size: 16px;
+            }
+
+            div {
+                padding: 10px 40px;
+                gap: 40px;
+            }
+        }
+
+        .home {
+            div {
+                width: 42%;
+
+                h1 {
+                    font-size: 60px;
+                    letter-spacing: 1.2px;
+                }
+            }
+        }
+
+        .blog>div {
+            gap: 10px;
+
+            div {
+                width: 300px;
+            }
+        }
+
+        .footer li {
+            font-size: 13px;
+        }
+
+        .footer-section5>ul>li>div {
+            input {
+                width: calc(100% - 100px);
+            }
+
+            button {
+                width: 100px;
+            }
+        }
+    }
+
+    .features-slider-element {
+        margin-left: 65px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .main-container {
+        width: 1200px;
+
+        .home {
+            background-image: none;
+
+            div {
+                width: 100%;
+            }
+        }
+
+        .features-slider-element {
+            margin-left: 39px;
+            min-width: 350px;
+        }
+
+        .progress-track>div>div {
+            margin: 0 10px;
+        }
+
+        .blog>div {
+            gap: 5px;
+
+            div {
+                width: 270px;
+            }
+        }
+
+        .footer-section5>ul>li>div {
+            input {
+                width: calc(100% - 70px);
+            }
+
+            button {
+                width: 70px;
+            }
+        }
+
+        .get-started-content {
+            width: 40%;
+            padding-top: 50px;
+        }
+    }
+
+    .strategic-alliance {
+        h2 {
+            font-size: 50px;
+        }
+    }
+
+
+}
+
+@media (max-width: 1250px) {
+    .main-container {
+        width: 1000px;
+
+        .header {
+            nav {
+                font-size: 13px;
+            }
+
+            div {
+                padding: 0px 20px;
+                gap: 20px;
+
+                button {
+                    padding: 15px 15px;
+                    font-size: 13px;
+                }
+
+                img {
+                    width: 20px;
+                }
+            }
+        }
+
+        .blog>div {
+            flex-wrap: wrap;
+        }
+
+        .footer-content {
+            h3 {
+                font-size: 18px;
+                letter-spacing: 1px;
+            }
+
+            ul {
+                margin-right: 30px;
+                margin-top: 20px;
+            }
+        }
+
+        .get-started-image {
+            width: 50%;
+            padding-top: 50px;
+        }
+
+        .get-started-content {
+            width: 50%;
+            padding-top: 50px;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .main-container {
+        width: 700px;
+
+        .header {
+            nav {
+                display: none;
+            }
+
+            div {
+                border: none;
+            }
+        }
+    }
+
+    .home {
+        margin-top: 100px;
+        height: fit-content;
+
+        div {
+            h4 {
+                letter-spacing: 1px;
+            }
+
+            h1 {
+                font-size: 30px;
+                letter-spacing: 1px;
+            }
+
+            p {
+                font-size: 13px;
+                letter-spacing: 1px;
+                margin: 10px 0;
+            }
+
+            div {
+                display: flex;
+                width: fit-content;
+
+                button {
+                    font-size: 13px;
+                    letter-spacing: 1px;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+
+    .strategic-alliance {
+        h2 {
+            font-size: 30px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        width: 520px;
+    }
+
+    .strategic-alliance {
+        h2 {
+            font-size: 26px;
+        }
+    }
+
+}
+
+@media (max-width: 576px) {
+    .main-container {
+        width: 300px;
+
+        .header {
+            div {
+                display: none;
+            }
+        }
+    }
+}
