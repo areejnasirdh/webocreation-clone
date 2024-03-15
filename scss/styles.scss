@@ -268,11 +268,12 @@ $p: 22px;
                 div {
                     width: 50%;
 
-                    h4 {
-                        color: $primary;
+                    .orange-paragraph{
+                        color: $primary !important;
                         letter-spacing: 2px;
                         font-size: 16px;
                         font-weight: bold;
+                        margin: 0;
                     }
 
                     h1 {
@@ -283,23 +284,26 @@ $p: 22px;
                         letter-spacing: 2px;
                     }
 
-                    p {
+                    p{
                         font-size: 22px;
                         letter-spacing: 1.5px;
                         margin: 40px 0;
+                        color: black !important;
                     }
+
 
                     div {
                         display: flex;
                         width: fit-content;
 
-                        button {
+                        a {
                             padding: 15px 25px;
                             font-size: 15px;
                             border: 1px solid $primary;
                             text-transform: uppercase;
                             font-family: $Vidaloka, serif;
                             letter-spacing: 1.5px;
+                            text-decoration: none;
 
                             &:first-child {
                                 background-color: $primary;

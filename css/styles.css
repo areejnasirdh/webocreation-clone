@@ -214,11 +214,12 @@
 * body .main-container .home div {
   width: 50%;
 }
-* body .main-container .home div h4 {
-  color: #f56032;
+* body .main-container .home div .orange-paragraph {
+  color: #f56032 !important;
   letter-spacing: 2px;
   font-size: 16px;
   font-weight: bold;
+  margin: 0;
 }
 * body .main-container .home div h1 {
   font-size: 50px;
@@ -231,34 +232,36 @@
   font-size: 22px;
   letter-spacing: 1.5px;
   margin: 40px 0;
+  color: black !important;
 }
 * body .main-container .home div div {
   display: flex;
   width: fit-content;
 }
-* body .main-container .home div div button {
+* body .main-container .home div div a {
   padding: 15px 25px;
   font-size: 15px;
   border: 1px solid #f56032;
   text-transform: uppercase;
   font-family: "Vidaloka", serif;
   letter-spacing: 1.5px;
+  text-decoration: none;
 }
-* body .main-container .home div div button:first-child {
+* body .main-container .home div div a:first-child {
   background-color: #f56032;
   border-radius: 30px 0 0 30px;
   color: white;
 }
-* body .main-container .home div div button:first-child:hover {
+* body .main-container .home div div a:first-child:hover {
   color: #f56032;
   background-color: white;
 }
-* body .main-container .home div div button:last-child {
+* body .main-container .home div div a:last-child {
   background-color: white;
   color: #f56032;
   border-radius: 0 30px 30px 0;
 }
-* body .main-container .home div div button:last-child:hover {
+* body .main-container .home div div a:last-child:hover {
   background-color: #f56032;
   color: white;
 }
